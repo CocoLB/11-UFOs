@@ -44,13 +44,55 @@
                     <form class="bg-dark">
                         <p>Filter Search</p>                  
                         <ul class="list-group bg-dark">
-                           <li class="list-group-item bg-dark">
-                            <label for="date">Enter Date</label>
-                            <input type="text" placeholder="1/10/2010" id="datetime" />
+                          <li class="list-group-item bg-dark">
+                            <div class="dropdown">
+                                <div class="dropbtn">Date
+                                  <select class="dropdown-content" id="datetime">   
+                                  </select>
+                                  <button type="button" class="btn filter btn-dark">Filter</button>
+                                  <input type="button" class="btn filter btn-dark" onclick="resetDate()" value="Reset" />
+                                </div>
+                            </div>
+                            <br>
+                            <div class="dropdown" >
+                                <div class="dropbtn">City
+                                <select class="dropdown-content" id="city">
+                                 </select>
+                                 <button type="button" class="btn filter btn-dark">Filter</button>
+                                 <input type="button" class="btn filter btn-dark" onclick="resetCity()" value="Reset" />
+                                </div>
+                            </div> 
+                             <br>            
+                            <div class="dropdown" >
+                                <div class="dropbtn">State
+                                <select class="dropdown-content" id="state">
+                                 </select>
+                                 <button type="button" class="btn filter btn-dark">Filter</button>
+                                 <input type="button" class="btn filter btn-dark" onclick="resetState()" value="Reset" />
+                                </div>
+                            </div></br>               
+                            <div class="dropdown" >
+                                <div class="dropbtn">Country
+                                <select class="dropdown-content" id="country">
+                                 </select>
+                                 <button type="button" class="btn filter btn-dark">Filter</button>
+                                 <input type="button" class="btn filter btn-dark" onclick="resetCountry()" value="Reset" />
+                                </div>
+                            </div>
+                            <br>              
+                            <div class="dropdown">
+                                <div class="dropbtn">Shape
+                                <select class="dropdown-content" id="shape">
+                                 </select>
+                                 <button type="button" class="btn filter btn-dark">Filter</button>
+                                 <input type="button" class="btn filter btn-dark" onclick="resetShape()" value="Reset" />
+                                </div>
+                            </div> </br>               
                              </li>
                              <li class="list-group-item bg-dark">
-                                 <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>  
-                             </li>
+                                 <button id="filter-btn" type="button" class="btn filter btn-dark">Filter All</button>
+                                 <input type="button" class="btn filter btn-dark" onclick="resetAll()" value="Reset All" /> 
+                          </li>
                         </ul>
                     </form>
                 </div>
